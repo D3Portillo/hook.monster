@@ -5,6 +5,7 @@ import Image from "next/image"
 import { AiOutlineGithub, AiOutlineTwitter } from "react-icons/ai"
 import Section from "@/components/layout/Section"
 import asset_logo from "@/assets/logo.png"
+import FormRequestAccess from "./FormRequestAccess"
 
 function Footer() {
   return (
@@ -38,22 +39,7 @@ function Footer() {
               soon. If you want product updates or access to the platform please
               request an invite here.
             </p>
-
-            <form className="flex mt-4 flex-col gap-4 lg:items-start">
-              <label htmlFor="email" className="sr-only">
-                Email
-              </label>
-
-              <input
-                className="w-full rounded-full border border-zinc-100 px-6 py-3"
-                type="email"
-                placeholder="Your email"
-              />
-
-              <button className="block rounded-full bg-pink-500 px-8 py-3 font-medium text-white transition hover:bg-pink-600">
-                Send request
-              </button>
-            </form>
+            <FormRequestAccess className="mt-4" />
           </div>
         </div>
       </section>
