@@ -14,7 +14,7 @@ function Footer() {
       className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8"
     >
       <Image height={64} src={asset_logo} alt="hook.monster logo" />
-      <section className="mt-16 grid grid-cols-1 gap-8 border-t border-zinc-50 pt-16 md:grid-cols-4 lg:grid-cols-6">
+      <section className="flex flex-wrap mt-16 gap-12 border-t border-zinc-50 pt-16">
         <LinkSection title="Services">
           <LinkItem>Monster Notify</LinkItem>
           <LinkItem>Magic Simple Auth</LinkItem>
@@ -30,42 +30,37 @@ function Footer() {
           <LinkItem>FAQs</LinkItem>
         </LinkSection>
         <div className="flex-grow" />
-        <div className="text-center sm:text-left md:col-span-4 lg:col-span-2">
+        <div className="w-full md:max-w-md">
           <p className="text-lg font-medium text-gray-900">Request access</p>
-          <div className="mx-auto mt-8 max-w-md sm:ml-0">
-            <p className="text-center leading-relaxed text-gray-500 sm:text-left">
+          <div className="mt-8">
+            <p className="leading-relaxed text-gray-500">
               We{"'"}re currently under develop and planning to launch very
               soon. If you want product updates or access to the platform please
               request an invite here.
             </p>
 
-            <form className="mt-4">
-              <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
-                <label htmlFor="email" className="sr-only">
-                  Email
-                </label>
+            <form className="flex mt-4 flex-col gap-4 lg:items-start">
+              <label htmlFor="email" className="sr-only">
+                Email
+              </label>
 
-                <input
-                  className="w-full rounded-full border border-zinc-100 px-6 py-3"
-                  type="email"
-                  placeholder="Your email"
-                />
+              <input
+                className="w-full rounded-full border border-zinc-100 px-6 py-3"
+                type="email"
+                placeholder="Your email"
+              />
 
-                <button className="block rounded-full bg-pink-500 px-8 py-3 font-medium text-white transition hover:bg-pink-600">
-                  Send request
-                </button>
-              </div>
+              <button className="block rounded-full bg-pink-500 px-8 py-3 font-medium text-white transition hover:bg-pink-600">
+                Send request
+              </button>
             </form>
           </div>
         </div>
       </section>
 
-      <section className="mt-16 border-t border-zinc-100 pt-6 sm:flex sm:items-center sm:justify-between">
-        <p className="text-center text-sm text-gray-500 sm:text-left">
-          2022 ― Nullius in verba
-        </p>
-
-        <div className="mt-4 sm:mt-0 flex gap-4 items-center justify-center sm:justify-start">
+      <section className="flex items-center justify-between mt-16 border-t border-zinc-100 pt-6">
+        <p className="text-sm text-gray-500">2022 ― Nullius in verba</p>
+        <div className="flex gap-4 items-center">
           <Link
             href="/"
             target="_blank"
@@ -107,7 +102,7 @@ function LinkSection({
   title,
 }: PropsWithChildren<{ title: string }>) {
   return (
-    <div className="text-center sm:text-left">
+    <div className="text-left">
       <p className="text-lg font-medium text-gray-900">{title}</p>
       <ul className="space-y-4 text-sm mt-8">{children}</ul>
     </div>
