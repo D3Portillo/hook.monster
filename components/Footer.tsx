@@ -20,15 +20,18 @@ function Footer() {
           <LinkItem>Monster Notify</LinkItem>
           <LinkItem>Magic Simple Auth</LinkItem>
           <LinkItem>Queue Message Service</LinkItem>
+          <LinkItem>All Services</LinkItem>
         </LinkSection>
 
         <LinkSection title="Company">
           <LinkItem>About</LinkItem>
+          <LinkItem>Pricing</LinkItem>
           <LinkItem>Roadmap</LinkItem>
         </LinkSection>
 
         <LinkSection title="Helpful Links">
           <LinkItem>FAQs</LinkItem>
+          <LinkItem>Docs</LinkItem>
         </LinkSection>
         <div className="flex-grow" />
         <div className="w-full md:max-w-md">
@@ -48,7 +51,7 @@ function Footer() {
         <p className="text-sm text-gray-500">2022 ― Nullius in verba</p>
         <div className="flex gap-4 items-center">
           <Link
-            href="/"
+            href="https://github.com/D3Portillo/hook.monster"
             target="_blank"
             className="transition-opacity hover:opacity-80"
           >
@@ -57,7 +60,7 @@ function Footer() {
           </Link>
 
           <Link
-            href="/"
+            href="https://twitter.com/HookMonsters"
             target="_blank"
             className="transition-opacity hover:opacity-80"
           >
